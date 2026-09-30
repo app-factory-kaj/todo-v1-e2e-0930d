@@ -1,0 +1,14 @@
+{
+  "name": "todo-api",
+  "type": "service",
+  "version": "0.1.0",
+  "language": "Ballerina",
+  "buildpack": "docker",
+  "appPath": "todo-api",
+  "entrypoint": "deployment/service",
+  "exposure": "internet",
+  "dependencies": [],
+  "description": "REST API for the shared todo list: create, list, update, complete/reopen and delete todos, backed entirely by an in-memory store. Holds no database and no other backing resource; all data is lost on restart. Does not authenticate callers — every request acts on the one shared list.",
+  "stories": [1, 2, 3, 4, 5],
+  "skillsPinned": ["openapi-conventions", "ballerina"]
+}

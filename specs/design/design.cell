@@ -1,0 +1,9 @@
+title Todo App
+
+component todo-webapp as "Todo Web App" web-application
+component todo-api as "Todo API" service
+
+north -> todo-webapp
+north -> todo-api
+
+todo-webapp -> todo-api

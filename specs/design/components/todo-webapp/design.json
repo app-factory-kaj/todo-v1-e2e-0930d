@@ -1,0 +1,16 @@
+{
+  "name": "todo-webapp",
+  "type": "web-application",
+  "version": "0.1.0",
+  "language": "TypeScript",
+  "buildpack": "docker",
+  "appPath": "todo-webapp",
+  "entrypoint": "deployment/web-application",
+  "exposure": "internet",
+  "dependencies": [
+    { "kind": "component", "name": "todo-api" }
+  ],
+  "description": "Single-page web app that lists, adds, edits, completes/reopens and deletes todos by calling todo-api. Holds no state of its own beyond what it fetches from the API and has no sign-in of any kind — every visitor sees and edits the same shared list.",
+  "stories": [1, 2, 3, 4, 5],
+  "skillsPinned": ["wireframes", "react-webapp", "oxygen-ui-design-system"]
+}
